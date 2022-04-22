@@ -16,6 +16,12 @@ public class Etudiant {
 		return "("+this.nom+":"+note+")";
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Etudiant)) return false;
+		Etudiant etudiant=(Etudiant)obj;
+		return this.id==etudiant.id;
+	}
 	
 
 }
