@@ -11,6 +11,11 @@ public class Main {
 		e2.setNote(12);
 		e3.setNote(16);
 		
+		ListEtudiants mesEtudiants=new ListEtudiants();
+		mesEtudiants.add(e1);
+		mesEtudiants.add(e2);
+		mesEtudiants.add(e3);
+		
 	
 	}
 
