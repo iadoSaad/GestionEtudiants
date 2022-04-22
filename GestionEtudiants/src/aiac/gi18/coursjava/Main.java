@@ -1,6 +1,7 @@
 package aiac.gi18.coursjava;
 
 import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
@@ -21,6 +22,8 @@ public class Main {
 		Collections.sort(mesEtudiants);
 		System.out.println(mesEtudiants);
 	
+		List<Etudiant> l=  mesEtudiants.filtrer(e -> e.getNote()>13);
+		System.out.println(l);
 	}
 
 }
