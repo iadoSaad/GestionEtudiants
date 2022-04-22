@@ -11,5 +11,11 @@ public class Etudiant {
 		this.note=10;
 	}
 	
+	@Override
+	public String toString() {
+		return "("+this.nom+":"+note+")";
+	}
+
+	
 
 }
