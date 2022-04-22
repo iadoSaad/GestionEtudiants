@@ -1,6 +1,6 @@
 package aiac.gi18.coursjava;
 
-public class Etudiant {
+public class Etudiant implements Comparable<Etudiant> {
 	private int id;
 	private String nom;
 	private double note;
@@ -21,6 +21,11 @@ public class Etudiant {
 		if(!(obj instanceof Etudiant)) return false;
 		Etudiant etudiant=(Etudiant)obj;
 		return this.id==etudiant.id;
+	}
+
+	@Override
+	public int compareTo(Etudiant etudiant) {
+		return Double.compare(this.note, etudiant.note);
 	}
 	
 
